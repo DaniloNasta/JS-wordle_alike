@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.wordle-container {
+    margin-top: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.grid-item {
+    border: 1px solid black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.guess-button {
+    padding: 5px 10px;
+}
+
+.guess-feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.keyboard-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.keyboard-button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    width: 40px;
+}
+
+input{
+  display: none;
+}

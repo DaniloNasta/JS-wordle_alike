@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wordle Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <h1 class="text-center">Wordle Game</h1>
+
+    <div class="wordle-container">
+        <div class="grid-container" id="grid-container">
+            <div class="grid-item" id="grid-item-00"></div>
+            <div class="grid-item" id="grid-item-01"></div>
+            <div class="grid-item" id="grid-item-02"></div>
+            <div class="grid-item" id="grid-item-03"></div>
+            <div class="grid-item" id="grid-item-04"></div>
+            <div class="grid-item" id="grid-item-10"></div>
+            <div class="grid-item" id="grid-item-11"></div>
+            <div class="grid-item" id="grid-item-12"></div>
+            <div class="grid-item" id="grid-item-13"></div>
+            <div class="grid-item" id="grid-item-14"></div>
+            <div class="grid-item" id="grid-item-20"></div>
+            <div class="grid-item" id="grid-item-21"></div>
+            <div class="grid-item" id="grid-item-22"></div>
+            <div class="grid-item" id="grid-item-23"></div>
+            <div class="grid-item" id="grid-item-24"></div>
+            <div class="grid-item" id="grid-item-30"></div>
+            <div class="grid-item" id="grid-item-31"></div>
+            <div class="grid-item" id="grid-item-32"></div>
+            <div class="grid-item" id="grid-item-33"></div>
+            <div class="grid-item" id="grid-item-34"></div>
+            <div class="grid-item" id="grid-item-40"></div>
+            <div class="grid-item" id="grid-item-41"></div>
+            <div class="grid-item" id="grid-item-42"></div>
+            <div class="grid-item" id="grid-item-43"></div>
+            <div class="grid-item" id="grid-item-44"></div>
+        </div>
+        <div class="keyboard-container d-flex flex-column justify-content-center align-items-center">
+          <div class="mb-2">
+            <button class="keyboard-button">Q</button>
+            <button class="keyboard-button">W</button>
+            <button class="keyboard-button">E</button>
+            <button class="keyboard-button">R</button>
+            <button class="keyboard-button">T</button>
+            <button class="keyboard-button">Y</button>
+            <button class="keyboard-button">U</button>
+            <button class="keyboard-button">I</button>
+            <button class="keyboard-button">O</button>
+            <button class="keyboard-button">P</button>
+          </div>
+          <div class="mb-2">
+            <button class="keyboard-button">A</button>
+            <button class="keyboard-button">S</button>
+            <button class="keyboard-button">D</button>
+            <button class="keyboard-button">F</button>
+            <button class="keyboard-button">G</button>
+            <button class="keyboard-button">H</button>
+            <button class="keyboard-button">J</button>
+            <button class="keyboard-button">K</button>
+            <button class="keyboard-button">L</button>
+          </div>
+          <div class="mb-5">
+            <button class="keyboard-button">Z</button>
+            <button class="keyboard-button">X</button>
+            <button class="keyboard-button">C</button>
+            <button class="keyboard-button">V</button>
+            <button class="keyboard-button">B</button>
+            <button class="keyboard-button">N</button>
+            <button class="keyboard-button">M</button>
+            <button class="bi bi-box-arrow-left" id="undo-button" onclick="undo()"></button>
+          </div>
+          <div class="guess-input-container">
+            <input type="text" id="guess-input" maxlength="5" readonly>
+          </div>
+          <button class="guess-button" id="guess-button" onclick="checkGuess()">Guess</button>
+          <div class="guess-feedback" id="guess-feedback"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
